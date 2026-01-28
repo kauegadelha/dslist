@@ -41,10 +41,10 @@ A API REST disponibiliza endpoints para consulta das informações organizadas p
 ### Games / Postman
 ![Games postman](images/games-postman.png)
 
-### Lista 2 / Postgres
+### Lista 2 / PostgreSQL
 ![Lista 2](images/list2-postgres.png)
 
-### Posição dos games nas listas / Postgres
+### Posição dos games nas listas / PostgreSQL
 ![Posição dos games na lista](images/position-games-lists-postgres.png)
 
 ### Alterar a posição de um game na lista / Postman
