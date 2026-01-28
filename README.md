@@ -8,6 +8,9 @@ O banco de dados PostgreSQL é executado em um container Docker por meio do Dock
 
 A API REST disponibiliza endpoints para consulta das informações organizadas por categorias.
 
+## Modelo de Domínio DSList
+![Modelo de Domínio DSList](images/dslist-model.png)
+
 ## Tecnologias
 
 ### Backend
@@ -33,4 +36,16 @@ A API REST disponibiliza endpoints para consulta das informações organizadas p
 - **GET** `/lists/{id}/games` — Retorna todos os jogos de uma lista
 - **PUT** `/lists/{id}/replacement` — Altera a posição de um jogo na lista
 
-### Prints da aplicação
+## Prints da aplicação
+
+### Games / Postman
+![Games postman](images/games-postman.png)
+
+### Lista 2 / Postgres
+![Lista 2](images/list2-postgres.png)
+
+### Posição dos games nas listas / Postgres
+![Posição dos games na lista](images/position-games-lists-postgres.png)
+
+### Alterar a posição de um game na lista / Postman
+![Alterar posição](images/replacement-postman.png)
