@@ -14,7 +14,7 @@ A API REST disponibiliza endpoints para consulta das informações organizadas p
 ## Tecnologias
 
 ### Backend
-- Java
+- Java (Versão 17)
 - Spring Boot
 
 ### Banco de Dados
@@ -81,3 +81,16 @@ http://localhost:5050
 7. Credenciais:
 - Email: me@example.com
 - Senha: 1234567
+
+8. Register Server:
+- Name: Postgres-local-docker
+- Conection -> host name: pg-docker
+- Port: 5432
+- Maintenance database: mydatabase
+- Username: postgres
+- Passoword: 1234567
+- Save
+
+9. Create Database:
+- Database: dslist
+- save
