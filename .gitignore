@@ -35,3 +35,4 @@ build/
 ### Windows ###
 desktop.ini
 Thumbs.db
+.data/
