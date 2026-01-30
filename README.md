@@ -14,7 +14,7 @@ A API REST disponibiliza endpoints para consulta das informações organizadas p
 ## Tecnologias
 
 ### Backend
-- Java
+- Java (Versão 17)
 - Spring Boot
 
 ### Banco de Dados
@@ -49,3 +49,48 @@ A API REST disponibiliza endpoints para consulta das informações organizadas p
 
 ### Alterar a posição de um game na lista / Postman
 ![Alterar posição](images/replacement-postman.png)
+
+## Docker
+
+O banco de dados PostgreSQL é executado via Docker Compose, utilizando o arquivo:
+
+[docker-compose.yml](Aula3/docker-compose.yml)
+
+### Execução do projeto
+
+1. Faça o clone do repositório:
+```bash
+git clone https://github.com/kauegadelha/dslist.git
+```
+2. Abra o projeto em sua IDE (IntelliJ, VS Code, Eclipse, etc).
+
+3. Execute a aplicação Spring Boot.
+
+4. No terminal PowerShell como adminstrador, navegue até a pasta:
+```bash
+cd Aula3
+```
+5. Execute o Docker Compose:
+```bash
+docker-compose up -d
+```
+6. Acesse o PgAdmin no navegador:
+```bash
+http://localhost:5050
+```
+7. Credenciais:
+- Email: me@example.com
+- Senha: 1234567
+
+8. Register Server:
+- Name: Postgres-local-docker
+- Conection -> host name: pg-docker
+- Port: 5432
+- Maintenance database: mydatabase
+- Username: postgres
+- Passoword: 1234567
+- Save
+
+9. Create Database:
+- Database: dslist
+- save
