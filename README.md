@@ -4,7 +4,7 @@ O projeto **DSList - Lista de Games** foi desenvolvido com o objetivo de aprimor
 
 A aplicação permite que o usuário consulte e organize listas de jogos, estruturadas nas categorias **Aventura e RPG** e **Jogos de Plataforma**, armazenadas em um banco de dados relacional. Para o mapeamento das entidades, é utilizada a **JPA (Java Persistence API)**, que relaciona as classes do sistema com as tabelas do banco de dados.
 
-O banco de dados PostgreSQL é executado em um container Docker por meio do Docker Compose, e os dados são inicializados automaticamente utilizando o arquivo `import.sql`, responsável por popular o sistema com listas e jogos previamente cadastrados.
+O banco de dados PostgreSQL é executado em um container Docker por meio do Docker Compose, e os dados são inicializados automaticamente utilizando o arquivo `create.sql`, responsável por popular o sistema com listas e jogos previamente cadastrados.
 
 A API REST disponibiliza endpoints para consulta das informações organizadas por categorias.
 
