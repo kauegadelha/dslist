@@ -63,17 +63,18 @@ O banco de dados PostgreSQL é executado via Docker Compose, utilizando o arquiv
 git clone https://github.com/kauegadelha/dslist.git
 ```
 2. Abra o projeto em sua IDE (IntelliJ, VS Code, Eclipse, etc).
-
-3. Execute a aplicação Spring Boot.
-
-4. No terminal PowerShell como adminstrador, navegue até a pasta:
+   
+3. No terminal PowerShell como adminstrador, navegue até a pasta:
 ```bash
 cd Aula3
 ```
-5. Execute o Docker Compose:
+
+4. Execute o Docker Compose:
 ```bash
 docker-compose up -d
 ```
+5. Execute a aplicação Spring Boot.
+
 6. Acesse o PgAdmin no navegador:
 ```bash
 http://localhost:5050
