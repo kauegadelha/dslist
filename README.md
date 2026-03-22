@@ -63,27 +63,29 @@ O banco de dados PostgreSQL é executado via Docker Compose, utilizando o arquiv
 git clone https://github.com/kauegadelha/dslist.git
 ```
 2. Abra o projeto em sua IDE (IntelliJ, VS Code, Eclipse, etc).
+
+3. Abra o docker e matenha rodando. 
    
-3. No terminal PowerShell como adminstrador, navegue até a pasta:
+4. No terminal PowerShell como adminstrador, navegue até a pasta:
 ```bash
 cd Aula3
 ```
 
-4. Execute o Docker Compose:
+5. Execute o Docker Compose:
 ```bash
 docker-compose up -d
 ```
-5. Execute a aplicação Spring Boot.
+6. Execute a aplicação Spring Boot.
 
-6. Acesse o PgAdmin no navegador:
+7. Acesse o PgAdmin no navegador:
 ```bash
 http://localhost:5050
 ```
-7. Credenciais:
+8. Credenciais:
 - Email: me@example.com
 - Senha: 1234567
 
-8. Register Server:
+9. Register Server:
 - Name: Postgres-local-docker
 - Conection -> host name: pg-docker
 - Port: 5432
@@ -92,6 +94,14 @@ http://localhost:5050
 - Passoword: 1234567
 - Save
 
-9. Create Database:
+10. Databases (Create Database):
 - Database: dslist
 - save
+
+11. No Explorador de arquivos, na pasta do projeto, entre na pasta sql, abra o arquivo create.sql e copie o código
+
+12. No pgAdmin, Postgres-Local-Docker -> Databases -> dslist -> Schemas -> Public -> botão direito em Tables -> Query Tool, cole o conteúdo do create.sql
+
+13. Execute o script
+
+14. Em Tables, botão direito -> Refresh 
