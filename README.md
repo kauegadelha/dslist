@@ -64,7 +64,7 @@ git clone https://github.com/kauegadelha/dslist.git
 ```
 2. Abra o projeto em sua IDE (IntelliJ, VS Code, Eclipse, etc).
 
-3. Abra o docker e matenha rodando. 
+3. Abra o `Docker Desktop` e mantenha-o rodando.
    
 4. No terminal PowerShell como adminstrador, navegue até a pasta:
 ```bash
@@ -75,33 +75,33 @@ cd Aula3
 ```bash
 docker-compose up -d
 ```
-6. Execute a aplicação Spring Boot.
+6. Execute a aplicação Spring Boot. A aplicação conectará automaticamente via `localhost:5433` conforme configurado no application.properties.
 
 7. Acesse o PgAdmin no navegador:
 ```bash
 http://localhost:5050
 ```
 8. Credenciais:
-- Email: me@example.com
-- Senha: 1234567
+- Email: `me@example.com`
+- Senha: `1234567`
 
 9. Register Server:
-- Name: Postgres-local-docker
-- Conection -> host name: pg-docker
-- Port: 5432
-- Maintenance database: mydatabase
-- Username: postgres
-- Passoword: 1234567
+- Name: `Postgres-local-docker`
+- Conection -> host name: `pg-docker`
+- Port: `5432` (Porta interna da rede Docker)
+- Maintenance database: `mydatabase`
+- Username: `postgres`
+- Passoword: `1234567`
 - Save
 
 10. Databases (Create Database):
-- Database: dslist
+- Database: `dslist`
 - save
 
-11. No Explorador de arquivos, na pasta do projeto, entre na pasta sql, abra o arquivo create.sql e copie o código
+11. Na pasta do projeto, entre em `sql/`, abra o arquivo `create.sql` e copie o código.
 
-12. No pgAdmin, Postgres-Local-Docker -> Databases -> dslist -> Schemas -> Public -> botão direito em Tables -> Query Tool, cole o conteúdo do create.sql
+12. No pgAdmin, navegue em: `Databases` -> `dslist` -> `Schemas` -> `Public` -> botão direito em `Tables` -> `Query Tool`.
 
-13. Execute o script
+13. cole o conteúdo do `create.sql` e execute o script (botão Play ou F5)
 
-14. Em Tables, botão direito -> Refresh 
+14. Clique com o botão direito em `Tables` -> `Refresh` para visualizar as tabelas criadas.
